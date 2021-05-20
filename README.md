@@ -1,36 +1,30 @@
-Vim syntax highlighting extras
-===============================================================================
+# vim-syntax-extra
 
-A collection of syntax definitions not yet shipped with stock vim.
-
-Bison, Flex
--------------------------------------------------------------------------------
-Authors:
-- [Panayiotis Karabassis](https://groups.google.com/d/msg/vim_use/-cHCX2MkpOg/bPoDIRyEqqIJ)
-- [Robert van Engelen](https://github.com/justinmk/vim-syntax-extra/pull/14)
-
-For:
-- [Bison - GNU parser generator](http://www.gnu.org/software/bison/)
-- [flex: The Fast Lexical Analyzer](https://github.com/westes/flex)
-- [RE/flex: advanced Flex++](https://github.com/Genivia/RE-flex)
-
-Enhanced C definitions 
--------------------------------------------------------------------------------
-Authors:
-- [Mikhail Wolfson, Helmut Schellong](http://www.vim.org/scripts/script.php?script_id=3064)
-
-Improved C syntax groups for operators, delimiters, user-defined functions,
-function calls, and a wealth of standard ANSI C function names.
-
-<table>
-<tr>
-    <td>Vim default</td><td>Enhanced</td>
-</tr>
-<tr>
-    <td colspan="2"><img src="https://raw.github.com/justinmk/vim-syntax-extra/fancy/enhanced_c_before_after.png"/></td>
-</tr>
-</table>
-
-
-
+> This plugin is basically the copy of ['justinmk/vim-syntax-extra'](https://github.com/justinmk/vim-syntax-extra)    
+> I copy it for some personalized changes.  
+> For more information, please refer to the page above.
+---
+## Things I customized:
+1. Add 
+```vim
+syn match cType "\v[A-Z][a-z0-9]+" 
+```
+  to the first line of c.vim to highlight the words start with captical letter.
+ Thus, the "Node" below will be highlighted.
+  ```c
+  typedef struct Node Node
+  Node{
+    int value;
+    Node *next;
+  };
+  ```
+---
+2. Remove "cType" in following line
+ ```vim
+ syn match cUserFunction "\<\h\w*\>\(\s\|\n\)*("me=e-1 contains=cType,cDelimiter,cDefine
+ ```
+ in c.vim
+  for not overwriting the highlight of user defined function.
+  
+  
 
