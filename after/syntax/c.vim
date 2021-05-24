@@ -1,4 +1,4 @@
-syn match cType "\v[A-Z][a-z0-9]+"
+syn match cType "\v[A-Z]+[a-z0-9]+"
 " Vim syntax file
 " Language:	C Additions
 " Maintainer:	Mikhail Wolfson <mywolfson@gmail.com>
