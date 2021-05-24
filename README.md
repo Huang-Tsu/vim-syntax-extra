@@ -10,7 +10,7 @@
 syn match cType "\v[A-Z][a-z0-9]+" 
 ```
   to the first line of c.vim to highlight the words start with captical letter.
- Thus, the "Node" below will be highlighted.
+ Thus, the `Node` below will be highlighted.
   ```c
   typedef struct Node Node
   Node{
@@ -19,7 +19,7 @@ syn match cType "\v[A-Z][a-z0-9]+"
   };
   ```
 ---
-2. Remove "cType" in following line
+2. Remove `cType` in following line
  ```vim
  syn match cUserFunction "\<\h\w*\>\(\s\|\n\)*("me=e-1 contains=cType,cDelimiter,cDefine
  ```
