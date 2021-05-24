@@ -24,7 +24,9 @@ syn match cType "\v[A-Z][a-z0-9]+"
  syn match cUserFunction "\<\h\w*\>\(\s\|\n\)*("me=e-1 contains=cType,cDelimiter,cDefine
  ```
  in c.vim
-  for not overwriting the highlight of user defined function.
-  
+ for not overwriting the highlight of user defined function.
+
+---
+3. Make comments and strings in c italicized.  
   
 
