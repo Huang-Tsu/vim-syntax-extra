@@ -1,4 +1,10 @@
+	"highlight any word start with captical letter as ctype
 syn match cType "\v[A-Z]+[a-z0-9]+"
+
+	"making comments and strings highlighted
+highlight Comment cterm=italic gui=italic
+highlight String cterm=italic gui=italic
+
 " Vim syntax file
 " Language:	C Additions
 " Maintainer:	Mikhail Wolfson <mywolfson@gmail.com>
