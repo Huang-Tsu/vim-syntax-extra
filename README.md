@@ -1,7 +1,7 @@
 # vim-syntax-extra
 
 > This plugin is basically the copy of ['justinmk/vim-syntax-extra'](https://github.com/justinmk/vim-syntax-extra)    
-> I copy it for some personalized changes.  
+> I copy it for customization.  
 > For more information, please refer to the page above.
 ---
 ## Things I customized:
